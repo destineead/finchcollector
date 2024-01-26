@@ -75,10 +75,15 @@ WSGI_APPLICATION = 'finchcollector.wsgi.application'
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'finchcollector',
-    }
+  'default': {
+    'ENGINE': 'django.db.backends.postgresql',
+    'NAME': 'finchcollector',
+    'USER': 'destineenugent1',
+    'PASSWORD': '34histTzrRju',
+    'HOST': 'ep-raspy-dust-a53jdryw.us-east-2.aws.neon.tech',
+    'PORT': '5432',
+    'OPTIONS': {'sslmode': 'require'},
+  }
 }
 
 
